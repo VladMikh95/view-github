@@ -9,5 +9,14 @@
         android:id="@+id/loginFragment"
         android:name="ml.vladmikh.projects.view_github.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_repositoriesListFragment"
+            app:destination="@id/repositoriesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoriesListFragment"
+        android:name="ml.vladmikh.projects.view_github.ui.repository.RepositoriesListFragment"
+        android:label="fragment_repositories_list"
+        tools:layout="@layout/fragment_repositories_list" />
 </navigation>
